@@ -7,13 +7,12 @@ def rotate(dir, degrees):
     if dir == 'L':
         degrees = 360 - degrees
     
-    original = (waypoint[0], waypoint[1])
     if degrees == 90:
-        waypoint = [original[1], -original[0]]
+        waypoint = [waypoint[1], -waypoint[0]]
     elif degrees == 180:
-        waypoint = [-original[0], -original[1]]
+        waypoint = [-waypoint[0], -waypoint[1]]
     elif degrees == 270:
-        waypoint = [-original[1], original[0]]
+        waypoint = [-waypoint[1], waypoint[0]]
 
 def move(dir, dist):
     global eastPos, northPos, waypoint

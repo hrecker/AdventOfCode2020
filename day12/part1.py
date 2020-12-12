@@ -21,6 +21,7 @@ def move(dir, dist):
         if currentDegrees == 90:
             dir = 'S'
         elif currentDegrees == 180:
+            # This dumb W right here
             dir = 'W'
         elif currentDegrees == 270:
             dir = 'N'
